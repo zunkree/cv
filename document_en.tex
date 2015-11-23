@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper,serif]{moderncv}
+\usepackage[russian,english]{babel}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+%\usepackage[scale=0.75]{geometry}
+\usepackage[left=1.5cm,right=1cm,top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+%% Personal data
+\firstname{Alexander}
+\familyname{Milushev}
+\title{\mbox{DevOps/Infrastructure Engineer}}
+\address{Kyiv}{Ukraine}
+\mobile{+38~(093)~263~33~40}
+%\phone{+2~(345)~678~901}
+%\fax{+3~(456)~789~012}
+\email{zunkree@gmail.com}
+\homepage{www.linkedin.com/in/zunkree}
+%\extrainfo{additional information}
+\photo[64pt][0.4pt]{picture}
+%\quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+	\cvline{July 2015 -- Present}{
+		\textbf{DevOps/Infrastructure Engineer}
+		\newline\textbf{Zoomdata}, \emph{Ukraine}
+		\begin{itemize}
+			\item Development and implementation of CI/CD process based on Atlassian Bamboo
+			\item Maintenance of servers, based in general on CentOS Linux
+			\item Support and development of demo and development infrastructure in
+			Amazon AWS
+			\item Maintenance of various SQL, NoSQL data sources for development
+			purpose
+			\item Maintenance of Hortonworks HDP and Cloudera CDH clusters for
+			development purpose
+			\item Support and development of monitoring system based on Zabbix
+			\item Development and implementation of SSO based on OpenLDAP and SAML infrastructure
+			\item Automatization of building, deployment and provisioning processes using Ansible and Python
+			\item Development and automatization, diagnostics and troubleshooting
+		\end{itemize}
+		}
+
+	\cvline{January 2015 -- June 2015}{
+		\textbf{System Administrator}
+		\newline\textbf{Aratog LLC}, \emph{Ukraine}
+		\begin{itemize}
+			\item Support and development of production/development infrastructure
+			\item Maintenance of servers, based on Gentoo Linux
+			\item Maintenance of virtualization systems based on LXC
+			\item Support of applications based on such technologies stack, like Java
+			and PHP.
+			\item Support of databases based on MongoDB, MySQL, Postgres.
+			\item Maintenance and development of configuration managment system based on
+			Ansible
+			\item Maintenance and development of Jenkins CI 
+			\item Maintenance of third patry software like Redmine, Gitlab, OpenLDAP,
+			OpenVPN
+			\item Development, monitoring, diagnostics and troubleshooting, backup
+		\end{itemize}
+		}
+
+	\cvline{March 2013 -- January 2015}
+		{\textbf{System Administrator}
+		\newline\textbf{Ciklum}, \emph{Ukraine}
+		\begin{itemize}
+			\item Support and development of production/development infrastructure
+			\item Maintenance of servers, based on Linux (Ubuntu, CentOS, etc.)
+			\item Maintenance of virtualization systems based on XEN, KVM, LXC
+			\item Support of Atlassian products (Jira, Confluence, Crusible, FishEye,
+			Bamboo) 
+			\item Support of databases based on MySQL, Postgres, MongoDB, Cassandra
+			\item Support of application based on such technologies stack, like PHP
+			(LAMP, php-fpm), Java (Tomcat, IBM WebSphere), Ruby, .Net, etc.
+			\item Maintenance and development of configuration managment system (Chef) and
+			continious integration tools (Jenkins, Bamboo, Go)
+			\item Development, monitoring, diagnostics and troubleshooting, backup
+		\end{itemize}
+		}
+
+	\cvline{March 2010 -- March 2013}
+		{\textbf{System Administrator}
+		\newline\textbf{CompanyName (can not disclose by NDA)}, \emph{Ukraine},
+		\begin{itemize}
+		 	\item Support critical services and systems on a 24/7;
+		 	\item Maintenance of servers based on FreeBSD and Linux;
+		 	\item Monitoring, diagnostics and troubleshooting, backup, and security;
+		 	\item Support of call-center based on Asterisk, FreeSWITCH;
+		 	\item Providing network and system security;
+			\item Network maintenance and support of network equipment.
+		\end{itemize}}
+
+\section{Languages}
+	\cvdoubleitem{Ukrainian}{\textbf{Native}}{Russian}{\textbf{Native}}
+	\cvdoubleitem{English}{\textbf{Intermediate}}{}{}
+
+\section{Education}
+	\cventry{2012 -- 2013}{Odessa State Polytechnic University}
+		{\newline Masters's degree}{Systems Engineering}{}{}
+	\cventry{2003 -- 2007}{Odessa State Polytechnic University}
+		{\newline Bachelor's degree}{Systems Engineering}{}{}
+		
+\section{Skills}
+	\cvitem{OS:}{Linux (CentOS, Gentoo, Ubuntu, etc.), FreeBSD}
+	\cvitem{Virtualization:}{KVM, XEN, LXC, FreeBSD Jail, Docker}
+	\cvitem{Language:}{Python, Shell, D, C}
+	\cvitem{SQL:}{MySQL/MariaDB, Postgres, DB2}
+	\cvitem{NoSQL:}{MongoDB, Redis, Memcached, Cassandra}
+	\cvitem{BigData:}{Hortonworks HDP, Cloudera CDH, HDFS, Apache Drill, HBase,
+	Phoenix, ZooKeeper}
+	\cvitem{Search:}{Apache Solr, Sphinx, ElasticSearch}
+	\cvitem{Stack:}{PHP (LAMP, php-fpm), Java (Tomcat, IBM WebSphere),
+	Ruby (RoR)}
+	\cvitem{Cloud:}{Amazon AWS, OpenStack, MS Azure}
+	\cvitem{CI:}{Bamboo, Jenkins, GoCD}
+	\cvitem{CMS:}{Chef, Puppet, Ansible}
+	\cvitem{SCM:}{Git, SVN, GitLab, gitolite}
+	\cvitem{Atlassian}{Jira, Confluence, Crusible, FishEye, Bamboo}
+	\cvitem{Web:}{Apache HTTPd, Nginx, Lighthttpd}
+	\cvitem{FTP:}{PureFTPd, vsftpd}
+	\cvitem{Mail:}{Postfix, Dovecot, Exim, DKIM, SPF, spamassassin, clamav,
+	amavisd, postgrey}
+	\cvitem{DNS:}{Bind9, PoweDNS}
+	\cvitem{VoIP:}{Asterisk, FreeSWITCH, SIP}
+	\cvitem{LDAP:}{OpenLDAP, ldap auth, sssd}
+	\cvitem{Monitoring:}{Zabbix, snmp}
+	\cvitem{Firewall:}{Iptables, PF, IPFW}
+	\cvitem{Networking:}{IPv4, IPv6, routing, VLAN, pptp, OpenVPN}
+
+\end{document}
